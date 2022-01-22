@@ -11,15 +11,12 @@ namespace WebAPI.Models
     {
         [Key]
         public int id {get; set;}
-        public long CNP { get; set; }
         [Column(TypeName = "nvarchar(100)")]
-        public string name { get; set; }
+        public string userName { get; set; }
         [Column(TypeName = "nvarchar(100)")]
-        public string email { get; set; }
-        [Column(TypeName = "nvarchar(100)")]
-        public string department { get; set; }
-        [Column(TypeName = "nvarchar(100)")]
-        public string leader { get; set; }
+        public string password { get; set; }
+        
+     
 
 
     }

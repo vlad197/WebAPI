@@ -77,12 +77,12 @@ namespace WebAPI.Controllers
 
         // POST: api/DEmployees
         [HttpPost]
-        public async Task<IActionResult> PostDEmployee([FromBody] DEmployee dEmployee)
+        public async Task<IActionResult> PostDEmployee( DEmployee dEmployee)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+           // if (!ModelState.IsValid)
+         //   {
+         //       return BadRequest(ModelState);
+          //  }
 
             _context.DEmployees.Add(dEmployee);
             await _context.SaveChangesAsync();

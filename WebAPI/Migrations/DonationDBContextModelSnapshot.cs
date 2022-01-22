@@ -24,18 +24,14 @@ namespace WebAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<long>("CNP");
+                    
 
-                    b.Property<string>("department")
+                    b.Property<string>("password")
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("email")
-                        .HasColumnType("nvarchar(100)");
+                    
 
-                    b.Property<string>("leader")
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("name")
+                    b.Property<string>("userName")
                         .HasColumnType("nvarchar(100)");
 
                     b.HasKey("id");

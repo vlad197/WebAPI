@@ -13,11 +13,9 @@ namespace WebAPI.Migrations
                 {
                     id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    CNP = table.Column<long>(nullable: false),
-                    name = table.Column<string>(type: "nvarchar(100)", nullable: true),
-                    email = table.Column<string>(type: "nvarchar(100)", nullable: true),
-                    department = table.Column<string>(type: "nvarchar(100)", nullable: true),
-                    leader = table.Column<string>(type: "nvarchar(100)", nullable: true)
+                    
+                    userName = table.Column<string>(type: "nvarchar(100)", nullable: true),
+                    password = table.Column<string>(type: "nvarchar(100)", nullable: true)
                 },
                 constraints: table =>
                 {
